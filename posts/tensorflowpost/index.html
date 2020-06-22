@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+    <title>Tensorflow and Gsteam · Daris&#39;s Blog</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <link rel="stylesheet" href="http://MadebyDaris.github.io/style.main.min.4bc8ffe0344d88be98a8c85b851bf8100cce93843efb90900a61c9c676f37402.css" />
+
+</head>
+<body class=" post-template ">
+
+    <div class="site-wrapper">
+
+<header class="site-header"><div class="outer site-nav-main">
+    <div class="inner"><nav class="site-nav">
+    <div class="site-nav-left">
+        
+            <a class="site-nav-logo" href="http://MadebyDaris.github.io/">Daris&#39;s Blog</a>
+        
+        
+        <div class="site-nav-content">
+            <ul class="nav" role="menu">
+                
+                <li class="nav-home" role="menuitem"><a href="http://MadebyDaris.github.io/about/">About</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="http://MadebyDaris.github.io/tags/">Tags</a></li>
+                
+                <li class="nav-home" role="menuitem"><a href="http://MadebyDaris.github.io/archives/">Archives</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+</div>
+</div></header>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post  no-image ">
+
+            <header class="post-full-header">
+
+                
+                    
+                    <section class="post-full-tags">
+                        <a href="http://MadebyDaris.github.io/tags/ai">Ai</a>
+                    </section>
+                
+
+                <h1 class="post-full-title">Tensorflow and Gsteam</h1>
+
+                
+
+                <div class="post-full-byline">
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+    <li class="author-list-item">
+        <div class="author-card">
+            <div class="author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></div>
+            <div class="author-info">
+                <div class="author-info">
+                    <h2>Nasser E. Idirene</h2>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="author-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
+    </li>
+</ul>
+
+                        <section class="post-full-byline-meta">
+                            
+                                <h4 class="author-name">Nasser E. Idirene</h4>
+                            
+                            <div class="byline-meta-content">
+                                <time class="byline-meta-date" datetime="2020-34-04">15 April 2020</time>
+                                <span class="byline-reading-time"><span class="bull">&bull;</span> 6 min read</span>
+                            </div>
+                        </section>
+
+                    </section>
+
+
+                </div>
+            </header>
+
+            
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <h1 id="tensorflow-inference-with-gstreamer">TensorFlow inference with GStreamer</h1>
+<h2 id="gstreamer">GStreamer</h2>
+<p><em>GStreamer</em> is a framework for creating streaming media applications and plugins:</p>
+<ul>
+<li>Application programmers can build media pipeline easily without writing a single line of code using its extensive set of plugins.</li>
+<li>Plugin programmers can use its clean and simple API to create self-contained plugins. It also provides a set of extensible base classes that can be use by object inheritance.</li>
+</ul>
+<p><img src="./myblog/static/img/googlenet.png" alt="Alt text" title="Gstreamer pipeline"></p>
+<p>Check more about GStreamer on its <a href="https://gstreamer.freedesktop.org/documentation/index.html">official documentation</a></p>
+<h2 id="r2inference">R2Inference</h2>
+<p><em>R2Inference</em> is an open-source project by RidgeRun that serves as an abstraction layer in C/C++ for a variety of machine learning frameworks. Using <em>R2Inference</em>, a single C/C++ application may work with a <em>Caffe</em>, <em>NCSDK</em> or <em>TensorFlow</em> model. This is specially useful for hybrid solutions on embedded devices, where multiple models may need to run on different devices (DLA, CPU, GPU, NCS, etc.).</p>
+<p>Check more about the R2Inference project and get installation instructions on its <a href="https://developer.ridgerun.com/wiki/index.php?title=R2Inference">Wiki site</a></p>
+<h2 id="gstinference">GstInference</h2>
+<p><em>GstInference</em> is an open-source project from Ridgerun Engineering that provides a framework for integrating deep learning inference into <em>GStreamer</em>. Either use one of the included elements to do out-of-the box inference using the most popular deep learning architectures, or leverage the base classes and utilities to support your own custom architecture.</p>
+<p><em>GstInference</em> objective is to put inference on the hands of the developer without having to worry about frameworks, platforms or media handling. It also has a strong focus on performance, what most Python frameworks don&rsquo;t really consider.</p>
+<p>Supported frameworks:</p>
+<ul>
+<li><em>TensorFlow</em></li>
+<li><em>NCSDK</em></li>
+<li><em>Caffe</em> (coming soon)</li>
+</ul>
+<p>Supported hardware:</p>
+<ul>
+<li>Intel Movidius Neural Compute Stick</li>
+<li>NVIDIA Jetson AGX Xavier</li>
+<li>NVIDIA Jetson TX1/TX2/TX2i</li>
+<li>x86 architecture based CPUs</li>
+<li>NVIDIA GPUs</li>
+</ul>
+<p>Provided inference engine plugins:</p>
+<ul>
+<li>TinyYOLO version 2</li>
+<li>Inception version 4</li>
+<li>Mobilenet (coming soon)</li>
+<li>U-net (coming soon)</li>
+</ul>
+<p>Provided visualization plugins:</p>
+<ul>
+<li>Classification overlay</li>
+<li>Detection overlay</li>
+<li>Check more about the <em>GstInference</em> project and get installation instructions on its <a href="https://developer.ridgerun.com/wiki/index.php?title=GstInference">wiki page</a>.</li>
+</ul>
+<h2 id="tensorflow">Tensorflow</h2>
+<p><em>TensorFlow</em> is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs). It is originally developed by researchers and engineers from the Google Brain team within Google’s AI organization. <em>Tensorflow</em> it is widely used to develop machine learning, deep learning applications.</p>
+<h2 id="deep-learning-workflow">Deep learning workflow</h2>
+<p>The deep learning workflow, to solve an specific problem, usually has the following steps:</p>
+<ul>
+<li>Identify the <strong>machine learning task</strong> that solves the problem.</li>
+<li>Get a <strong>dataset</strong> that matches the problem data and is labeled accordingly to the task selected.</li>
+<li>Select a deep learning architecture that solves the task and matches the task complexity.</li>
+<li><strong>Train</strong> your architecture with the dataset to produce a model with weights.</li>
+<li>Optimize the resulting model and <strong>deploy</strong> it on your device. GstInference makes this process seamless thanks to its framework and device independence.</li>
+</ul>
+<h2 id="deep-learning-tasks">Deep learning tasks</h2>
+<p>The task that can be performed by deep convolutional neural networks are virtually endless. The three most popular tasks (<strong>classification</strong>, <strong>detection</strong> and <strong>segmentation</strong>) can be achieved on <em>TensorFlow</em> without much effort. More complex task may require the implementation of an specific layer or loss function.</p>
+<p><img src="./myblog/static/img//deep_learning_tasks.jpeg" alt="Alt text" title="Deep Learning Tasks"></p>
+<h2 id="dataset-and-architecture">Dataset and architecture</h2>
+<p>Datasets for virtually any problem are a google search away. If you can&rsquo;t find the dataset for your problem, there are a lot of labeling tools to facilitate this process. A lot of research goes on developing a deep learning architecture. Most of the time it is easier, and produces better results, to use an existing architecture. <em>Inception</em> (<em>Googlenet)</em> is a popular architecture for classification tasks.</p>
+<p><img src="./myblog/static/img//googlenet.png" alt="ALt text" title="Google Inception Architecture"></p>
+<h2 id="training">Training</h2>
+<p>Training is usually done in a cluster or a host computer, where resources are not that important. <em>Tensorflow</em> is designed specifically for training, with the <em>Python</em> API that help developers prototype models and <em>Tensorboard</em> to monitor the training process:</p>
+<p><img src="./myblog/static/img//tensorboard.png" alt="Alt text" title="Tensorboard"></p>
+<p>After training is completed, <em>Tensorflow</em> offers various ways to save your results. There are five types of data generated by <em>Tensorflow</em>:</p>
+<ul>
+<li><code>model_graph.chkp.meta</code>: Graph data and metadata (operations, configurations, etc), allows to load a graph and retrain it.</li>
+<li><code>model_graph.chkp.index</code>: This file has a key-value table linking a tensor name and the location to find the corresponding data in the chkp.data files</li>
+<li><code>model_graph.chkp.data-00000-of-00001</code>: Holds all variables (which includes weights of the graph) from the session at different timestamps</li>
+<li><code>checkpoint</code> : A file that keeps a record of latest checkpoint files saved</li>
+<li><code>model_graph.pb</code>: A frozen model containing graph operations and variables in a single file.</li>
+</ul>
+<p>You can use a saver object to handle saving and restoring of your model graph metadata and the checkpoint data:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#75715e">#! /usr/bin/env python3</span>
+<span style="color:#f92672">import</span> tensorflow <span style="color:#f92672">as</span> tf
+<span style="color:#f92672">import</span> os
+<span style="color:#75715e">#file name is model_graph.py</span>
+dir <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>dirname(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>realpath(__file__))
+default_saver <span style="color:#f92672">=</span> tf<span style="color:#f92672">.</span>train<span style="color:#f92672">.</span>Saver() 
+<span style="color:#66d9ef">with</span> tf<span style="color:#f92672">.</span>Session() <span style="color:#66d9ef">as</span> sess:
+  sess<span style="color:#f92672">.</span>run(tf<span style="color:#f92672">.</span>global_variables_initializer())
+  
+  <span style="color:#75715e"># Perform your graph construction and training</span>
+  
+  default_saver<span style="color:#f92672">.</span>save(sess, dir <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/data-all&#39;</span>)
+</code></pre></div><p>In some instances a trained model is available online, you can associate a graph with a checkpoint to save it as a session or continue training:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#75715e">#! /usr/bin/env python3</span>
+<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<span style="color:#f92672">import</span> tensorflow <span style="color:#f92672">as</span> tf
+
+<span style="color:#f92672">from</span> tensorflow.contrib.slim.nets <span style="color:#f92672">import</span> inception
+
+slim <span style="color:#f92672">=</span> tf<span style="color:#f92672">.</span>contrib<span style="color:#f92672">.</span>slim
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">unpack</span>(name, image_size, num_classes):
+  <span style="color:#66d9ef">with</span> tf<span style="color:#f92672">.</span>Graph()<span style="color:#f92672">.</span>as_default():
+    image <span style="color:#f92672">=</span> tf<span style="color:#f92672">.</span>placeholder(<span style="color:#e6db74">&#34;float&#34;</span>, [<span style="color:#ae81ff">1</span>, image_size, image_size, <span style="color:#ae81ff">3</span>], name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;input&#34;</span>)
+    <span style="color:#66d9ef">with</span> slim<span style="color:#f92672">.</span>arg_scope(inception<span style="color:#f92672">.</span>inception_v1_arg_scope()):
+        logits, _ <span style="color:#f92672">=</span> inception<span style="color:#f92672">.</span>inception_v1(image, num_classes, is_training<span style="color:#f92672">=</span>False, spatial_squeeze<span style="color:#f92672">=</span>False)
+    probabilities <span style="color:#f92672">=</span> tf<span style="color:#f92672">.</span>nn<span style="color:#f92672">.</span>softmax(logits)
+    init_fn <span style="color:#f92672">=</span> slim<span style="color:#f92672">.</span>assign_from_checkpoint_fn(<span style="color:#e6db74">&#39;inception_v1.ckpt&#39;</span>, slim<span style="color:#f92672">.</span>get_model_variables(<span style="color:#e6db74">&#39;InceptionV1&#39;</span>))
+
+    <span style="color:#66d9ef">with</span> tf<span style="color:#f92672">.</span>Session() <span style="color:#66d9ef">as</span> sess:
+        init_fn(sess)
+        saver <span style="color:#f92672">=</span> tf<span style="color:#f92672">.</span>train<span style="color:#f92672">.</span>Saver(tf<span style="color:#f92672">.</span>global_variables())
+        saver<span style="color:#f92672">.</span>save(sess, <span style="color:#e6db74">&#34;output/&#34;</span><span style="color:#f92672">+</span>name)
+
+unpack(<span style="color:#e6db74">&#39;inception-v1&#39;</span>, <span style="color:#ae81ff">224</span>, <span style="color:#ae81ff">1001</span>)
+</code></pre></div><p>Finally you can freeze the graph by using the <code>freeze_graph.py</code> <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py">tool</a></p>
+<h2 id="deploy">Deploy</h2>
+<p><em>Tensorflow</em>&lsquo;s frozen graph can be deployed on many inference frameworks. We will focus on how to deploy your model using <em>GstIference</em>. RidgeRun has <a href="https://www.ridgerun.com/store/Deep-Learning-Models-and-Binaries-c33344794">model zoo</a> where you can download trained models ready for deployment.
+If you use an architecture not supported by GstInference you need to inherit GstVideoInference class implementing your model&rsquo;s pre-process, post-process and capabilities.</p>
+<p>If you use an architecture already implemented you can use one of our out of the box plugins for inference and visualization.</p>
+<h2 id="examples">Examples</h2>
+<p>For this examples you need to install R2Inference, GstInference and Tensorflow C API</p>
+<h3 id="inceptionv4--classificationoverlay">inceptionv4 + classificationoverlay</h3>
+<ul>
+<li>Get the graph used on this example from this <a href="https://www.ridgerun.com/store/GstInference-c33344794">link</a></li>
+<li>You will need a v4l2 compatible camera</li>
+<li>Pipeline</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">CAMERA<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/dev/video0&#39;</span>
+MODEL_LOCATION<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;graph_inceptionv4_googlenet_tensorflow.pb&#39;</span>
+INPUT_LAYER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;input&#39;</span>
+OUTPUT_LAYER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;InceptionV4/Logits/Predictions&#39;</span>
+LABELS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;imagenet_labels.txt&#39;</span>
+gst-launch-1.0 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>v4l2src device<span style="color:#f92672">=</span>$CAMERA ! <span style="color:#e6db74">&#34;video/x-raw, width=1280, height=720&#34;</span> ! tee name<span style="color:#f92672">=</span>t <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>t. ! videoconvert ! videoscale ! queue ! net.sink_model <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>t. ! queue ! net.sink_bypass <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>inceptionv4 name<span style="color:#f92672">=</span>net model-location<span style="color:#f92672">=</span>$MODEL_LOCATION backend<span style="color:#f92672">=</span>tensorflow backend::input-layer<span style="color:#f92672">=</span>$INPUT_LAYER  backend::output-layer<span style="color:#f92672">=</span>$OUTPUT_LAYER <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>net.src_bypass ! videoconvert ! classificationoverlay labels<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>cat $LABELS<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> font-scale<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span> thickness<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span> ! videoconvert ! xvimagesink sync<span style="color:#f92672">=</span>false
+
+</code></pre></div><p><img src="./static/img//example1.png" alt="Alt text" title="Inception v4 and  Classification overlay"></p>
+<h3 id="tinyyolov2--detectionoverlay">tinyyolov2 + detectionoverlay</h3>
+<ul>
+<li>Get the graph used on this example from this <a href="https://www.ridgerun.com/store/GstInference-c33344794">link</a></li>
+<li>You will need a v4l2 compatible camera</li>
+<li>Pipeline</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">CAMERA<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/dev/video0&#39;</span>
+MODEL_LOCATION<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;tinyyolov2.pb&#39;</span>
+INPUT_LAYER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;input/Placeholder&#39;</span>
+OUTPUT_LAYER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;add_8&#39;</span>
+LABELS<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;labels.txt&#39;</span>
+gst-launch-1.0 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>v4l2src device<span style="color:#f92672">=</span>$CAMERA ! <span style="color:#e6db74">&#34;video/x-raw, width=1280, height=720&#34;</span> ! tee name<span style="color:#f92672">=</span>t <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>t. ! videoconvert ! videoscale ! queue ! net.sink_model <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>t. ! queue ! net.sink_bypass <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>tinyyolov2 name<span style="color:#f92672">=</span>net model-location<span style="color:#f92672">=</span>$MODEL_LOCATION backend<span style="color:#f92672">=</span>tensorflow backend::input-layer<span style="color:#f92672">=</span>input/Placeholder backend::output-layer<span style="color:#f92672">=</span>add_8 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>net.src_bypass ! videoconvert ! detectionoverlay labels<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>cat $LABELS<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> font-scale<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> thickness<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> ! videoconvert ! xvimagesink sync<span style="color:#f92672">=</span>false
+</code></pre></div><p><img src="http://MadebyDaris.github.io/myblog/static/img//example2.png" alt="Alt text" title="Inception v4 and  Classification overlay"></p>
+
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+    
+    <article class="read-next-card">
+        <header class="read-next-card-header">
+            <h3><span>More in</span> <a href="http://MadebyDaris.github.io/tags/ai">Ai</a></h3>
+        </header>
+        <div class="read-next-card-content">
+            <ul>
+                
+            </ul>
+        </div>
+    </article>
+<article class="post-card post
+ no-image
+ ">
+
+        
+    
+        <div class="post-card-content">
+    
+            <a class="post-card-content-link" href="http://MadebyDaris.github.io/posts/py-frac-01/">
+    
+                <header class="post-card-header">
+                    
+                        
+                        <div class="post-card-primary-tag">Python</div>
+                    
+
+                    <h2 class="post-card-title">Python Fractals sierplinkski triangle for -- Beginners</h2>
+                </header>
+    
+                <section class="post-card-excerpt">
+                    <p>python setup Imports we will be using PyLab for this for mapping and We will use numpy for math with py
+import numpy as np import pylab from random import randint </p>
+                </section>
+    
+            </a>
+
+            <footer class="post-card-meta">
+                    <ul class="author-list">
+                        <li class="author-list-item">
+                            <div class="author-name-tooltip">Daris Idirene</div>
+                            <a href="https://test.com" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg></a>
+                        </li>
+                    </ul>
+                    <div class="post-card-byline-content">
+                        <span>Daris Idirene</span>
+                        <span class="post-card-byline-date"><time datetime="2020-123-03">27 March 2020</time>
+                            <span class="bull">&bull;</span> 1 min read</span>
+                    </div>
+                </footer>
+    
+        </div>
+
+</article>
+    
+
+            
+        </div>
+    </div>
+</aside>
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="http://MadebyDaris.github.io/">Daris&#39;s Blog</a> &copy; 2020</section>
+                <nav class="site-footer-nav">
+                    <a href="http://MadebyDaris.github.io/">Latest Posts</a>
+                    <a href="https://twitter.com/ByDaris" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://github.com/MadebyDaris" target="_blank" rel="noopener">Github</a>
+                    <a href="https://acelaworks.com" target="_blank" rel="noopener" style="opacity: 0.5;"> Acelaworks link </a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
