@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Daris&#39;s Blog</title>
-    <link>http://madebydaris.github.io/tags/python/</link>
+    <link>https://madebydaris.github.io/tags/python/</link>
     <description>Recent content in Python on Daris&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Apr 2020 15:03:11 +0400</lastBuildDate>
     
-	<atom:link href="http://madebydaris.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://madebydaris.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tensorflow and Gsteam</title>
-      <link>http://madebydaris.github.io/posts/tensorflowpost/</link>
+      <link>https://madebydaris.github.io/posts/tensorflowpost/</link>
       <pubDate>Wed, 15 Apr 2020 15:03:11 +0400</pubDate>
       
-      <guid>http://madebydaris.github.io/posts/tensorflowpost/</guid>
+      <guid>https://madebydaris.github.io/posts/tensorflowpost/</guid>
       <description>TensorFlow inference with GStreamer GStreamer GStreamer is a framework for creating streaming media applications and plugins:
  Application programmers can build media pipeline easily without writing a single line of code using its extensive set of plugins. Plugin programmers can use its clean and simple API to create self-contained plugins. It also provides a set of extensible base classes that can be use by object inheritance.  Check more about GStreamer on its official documentation</description>
     </item>
     
     <item>
       <title>Python Fractals sierplinkski triangle for -- Beginners</title>
-      <link>http://madebydaris.github.io/posts/py-frac-01/</link>
+      <link>https://madebydaris.github.io/posts/py-frac-01/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://madebydaris.github.io/posts/py-frac-01/</guid>
+      <guid>https://madebydaris.github.io/posts/py-frac-01/</guid>
       <description>python setup Imports we will be using PyLab for this for mapping and We will use numpy for math with py
 import numpy as np import pylab from random import randint </description>
     </item>
