@@ -2,129 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Daris&#39;s Blog</title>
-    <link>https://madebydaris.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Daris&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Apr 2020 15:03:11 +0400</lastBuildDate>
     
-	<atom:link href="https://madebydaris.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ai</title>
-      <link>https://madebydaris.github.io/tags/ai/</link>
+      <link>/tags/ai/</link>
       <pubDate>Wed, 15 Apr 2020 15:03:11 +0400</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/ai/</guid>
+      <guid>/tags/ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>google</title>
-      <link>https://madebydaris.github.io/tags/google/</link>
+      <link>/tags/google/</link>
       <pubDate>Wed, 15 Apr 2020 15:03:11 +0400</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/google/</guid>
+      <guid>/tags/google/</guid>
       <description></description>
     </item>
     
     <item>
       <title>math</title>
-      <link>https://madebydaris.github.io/tags/math/</link>
+      <link>/tags/math/</link>
       <pubDate>Wed, 15 Apr 2020 15:03:11 +0400</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/math/</guid>
+      <guid>/tags/math/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://madebydaris.github.io/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Wed, 15 Apr 2020 15:03:11 +0400</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tensorflow</title>
-      <link>https://madebydaris.github.io/tags/tensorflow/</link>
+      <link>/tags/tensorflow/</link>
       <pubDate>Wed, 15 Apr 2020 15:03:11 +0400</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/tensorflow/</guid>
+      <guid>/tags/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beginner</title>
-      <link>https://madebydaris.github.io/tags/beginner/</link>
+      <link>/tags/beginner/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/beginner/</guid>
+      <guid>/tags/beginner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fractals</title>
-      <link>https://madebydaris.github.io/tags/fractals/</link>
+      <link>/tags/fractals/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/fractals/</guid>
+      <guid>/tags/fractals/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>https://madebydaris.github.io/tags/css/</link>
+      <link>/tags/css/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/css/</guid>
+      <guid>/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://madebydaris.github.io/tags/html/</link>
+      <link>/tags/html/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/html/</guid>
+      <guid>/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://madebydaris.github.io/tags/markdown/</link>
+      <link>/tags/markdown/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/markdown/</guid>
+      <guid>/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://madebydaris.github.io/tags/themes/</link>
+      <link>/tags/themes/</link>
       <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/themes/</guid>
+      <guid>/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://madebydaris.github.io/tags/text/</link>
+      <link>/tags/text/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/text/</guid>
+      <guid>/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://madebydaris.github.io/tags/emoji/</link>
+      <link>/tags/emoji/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://madebydaris.github.io/tags/emoji/</guid>
+      <guid>/tags/emoji/</guid>
       <description></description>
     </item>
     
