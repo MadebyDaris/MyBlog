@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/funny/</loc>
+    <lastmod>2020-08-15T15:03:11+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/testagain/</loc>
+    <lastmod>2020-08-15T15:03:11+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-08-15T15:03:11+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-08-15T15:03:11+04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/ai/</loc>
     <lastmod>2020-04-08T17:00:00+00:00</lastmod>
   </url>
@@ -18,17 +38,7 @@
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-04-08T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/python/</loc>
-    <lastmod>2020-04-08T17:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-04-08T17:00:00+00:00</lastmod>
   </url>
   

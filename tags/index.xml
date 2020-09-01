@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Daris&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2020 15:03:11 +0400</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 15:03:11 +0400</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>funny</title>
+      <link>/tags/funny/</link>
+      <pubDate>Sat, 15 Aug 2020 15:03:11 +0400</pubDate>
+      
+      <guid>/tags/funny/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ai</title>
