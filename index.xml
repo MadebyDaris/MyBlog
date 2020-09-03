@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Daris&#39;s Blog</title>
+    <title>Test</title>
     <link>/</link>
-    <description>Recent content on Daris&#39;s Blog</description>
+    <description>Recent content on Test</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,8 @@
       <pubDate>Sat, 15 Aug 2020 15:03:11 +0400</pubDate>
       
       <guid>/posts/testagain/</guid>
-      <description>Haha 69 funny memes lolsies</description>
+      <description>Testing this is s hugo test this was automatically generated from a .md to html by using paramaters to style and tags
+h1 h2 </description>
     </item>
     
     <item>

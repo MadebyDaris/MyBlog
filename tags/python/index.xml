@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Daris&#39;s Blog</title>
+    <title>Python on Test</title>
     <link>/tags/python/</link>
-    <description>Recent content in Python on Daris&#39;s Blog</description>
+    <description>Recent content in Python on Test</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Apr 2020 15:03:11 +0400</lastBuildDate>
