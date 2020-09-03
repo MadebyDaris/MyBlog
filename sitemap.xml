@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tags/funny/</loc>
+    <loc>/posts/</loc>
+    <lastmod>2020-08-15T15:03:11+04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <lastmod>2020-08-15T15:03:11+04:00</lastmod>
   </url>
   
@@ -13,12 +18,7 @@
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-08-15T15:03:11+04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
+    <loc>/tags/testing/</loc>
     <lastmod>2020-08-15T15:03:11+04:00</lastmod>
   </url>
   
